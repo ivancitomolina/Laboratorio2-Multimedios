@@ -1,38 +1,39 @@
 .nav {
-	background:none;
+	 & .nav_list{
+        list-style:none;
+      display:flex;
+        align-items:center;
+    
+        & .nav_items{
+            display:flex;
+          
+            & .nav_link {
+                color:black;
+                margin:20px;
+                text-decoration:none;
+
+                &:hover {
+                    transform:scale(1.1);
+                }
+            }
+        }
+    }
+    & #nav_logo {
+        background:black;
+     
+        & .nav_logo-modified{
+         color:white;
+              margin:10px;
+          font-size: 30px;
+            text-decoration:none;
+      }
+     
+     } 
 }
 
-.nav .nav_list{
-	list-style:none;
-  display:flex;
-    align-items:center;
 
-}
- 
-.nav .nav_list .nav_items{
-  display:flex;
-}
-#nav_logo {
-   background:black;
 
-}
 
-#nav_logo .nav_logo-modified{
-   color:white;
-    	margin:10px;
-    font-size: 30px;
-  	text-decoration:none;
-}
- 
-.nav .nav_list .nav_items .nav_link {
-	color:black;
-	margin:20px;
-	text-decoration:none;
-}
-  
-.nav .nav_list .nav_items .nav_link:hover {
-  transform:scale(1.1);
-}
 
 
 .sub_nav {
@@ -58,88 +59,4 @@
 .sub_nav .nav_list li:nth-child(-n+2) a:after {
  content: ' / ';
   margin-left:20px;
-}
-
-.paragraph{
-    display: flex;
-  width:500px;
-}
-
-#main{ 
- 
-  display:flex;
-  flex-wrap:wrap;
-  margin:10px;
-  
-}
-
-.main-article{
-  width:300px;
-  margin:auto;
-  padding:10px;
-border: black 1px solid;
-  margin-top:10px;
-}
-.main-article .article-section{
-  display:flex;
-  background:#EDF6FC;
-  width:auto;
-  height:150px;
-text-align:center;
-  align-items:center;
-}
-.main-article .article-section .section-paragraph{
-   transform:translate(70px);
-  font-size:20px;
-}
-
-.main-article p{
-    width:140px;
-}
-
-.main-article .article-section2 p:last-child{
-    color:green;
-}
-
-.main-article b{
-  text-decoration:underline;
-}
-
-
-
-@media only screen and (max-width:700px) {
- 
-  body{
-    margin-top:70px;
-  }
-  #nav_logo {
-      position:absolute;
-      top:7px;
-      left:45%;
-}
-  
- 
-   .nav {
-	background:black;
-}
-  
-  .nav .nav_list .nav_items .nav_link {
-	color:white;
-margin-left:-3%;
-}
-  
-  
-  
-  .main-article{
-    width:70%;
-  }
-    
-  
-}
-
-@media only screen and (max-width:530px) {
-
-.paragraph{
-    width:auto;
-}
 }
