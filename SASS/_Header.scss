@@ -4,15 +4,15 @@ $titlefont: 'Lobster', cursive;
 $paragraphFont:'Open Sans', sans-serif;
 .nav {
   
-	 & .nav_list{
+	 & .nav__list{
         list-style:none;
       display:flex;
         align-items:center;
     
-        & .nav_items{
+        & .nav__items{
             display:flex;
           
-            & .nav_link {
+            & .nav__link {
               font-family: $titlefont;
                 color:black;
                 margin:20px;
@@ -24,11 +24,11 @@ $paragraphFont:'Open Sans', sans-serif;
             }
         }
     }
-    & #nav_logo {
+    & #nav__logo {
         display:flex;
         background:$logobackground;
      
-        & .nav_logo-modified{
+        & .nav__logo__modified{
          color:white;
               margin:10px;
           font-size: 30px;
@@ -39,15 +39,15 @@ $paragraphFont:'Open Sans', sans-serif;
 }
 
 
-.sub_nav {
+.sub__nav {
   margin-top:-17px;
   background:$subnavBackgorund;
 
-  .nav_list {
+  .nav__list {
     display: flex;
     list-style: none;
 
-    .nav_link {
+    .nav__link {
 
         display: flex;
         font-family: $titlefont;

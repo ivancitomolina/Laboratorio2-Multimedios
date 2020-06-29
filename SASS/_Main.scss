@@ -1,14 +1,14 @@
 $navlinkbackground: #F29F05;
 $titlefont: 'Lobster', cursive;
 $paragraphFont:'Open Sans', sans-serif;
-#movie-list{ 
+#movie__list{ 
  
     display:flex;
     flex-wrap:wrap;
     margin:10px;
     
   }
-  .movie-item{
+  .movie__item{
     width:300px;
     margin:auto;
     padding:10px;
@@ -21,7 +21,7 @@ $paragraphFont:'Open Sans', sans-serif;
         text-decoration:underline;
       }  
 
-    .movie-banner{
+    .movie__banner{
         display:flex;
         background:#EDF6FC;
        /* width:auto;
@@ -33,10 +33,10 @@ $paragraphFont:'Open Sans', sans-serif;
        
       }
 
-    .movie-description{
+    .movie__description{
       font-family: $paragraphFont;
       font-size: 14px;
-      .movie-title{
+      .movie__title{
         font-family: $titlefont;
         font-size: 18px;
       }
@@ -57,7 +57,7 @@ $paragraphFont:'Open Sans', sans-serif;
     body{
       margin-top:70px;
 
-      #nav_logo {
+      #nav__logo {
         position:absolute;
         top:7px;
         left:45%;
@@ -65,9 +65,9 @@ $paragraphFont:'Open Sans', sans-serif;
 
          .nav {
             background:$navlinkbackground;
-            & .nav_list{
-                & .nav_items{
-                    & .nav_link{
+            & .nav__list{
+                & .nav__items{
+                    & .nav__link{
                         color:black;
                         margin-left:-3%;
 
@@ -76,7 +76,7 @@ $paragraphFont:'Open Sans', sans-serif;
             }
         } 
 
-        .movie-item{
+        .movie__item{
             width:65%;
           }
 
