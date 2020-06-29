@@ -1,14 +1,14 @@
 $navlinkbackground: #F29F05;
 $titlefont: 'Lobster', cursive;
 $paragraphFont:'Open Sans', sans-serif;
-#main{ 
+#movie-list{ 
  
     display:flex;
     flex-wrap:wrap;
     margin:10px;
     
   }
-  .main-article{
+  .movie-item{
     width:300px;
     margin:auto;
     padding:10px;
@@ -21,7 +21,7 @@ $paragraphFont:'Open Sans', sans-serif;
         text-decoration:underline;
       }  
 
-    .article-section{
+    .movie-banner{
         display:flex;
         background:#EDF6FC;
        /* width:auto;
@@ -30,18 +30,13 @@ $paragraphFont:'Open Sans', sans-serif;
       text-align:center;
         align-items:center;
         font-family: $paragraphFont;
-        & .section-paragraph{
-          
-            transform:translate(70px);
-           font-size:20px;
-
-         }  
+       
       }
 
-    .article-section2{
+    .movie-description{
       font-family: $paragraphFont;
       font-size: 14px;
-      .sec-header{
+      .movie-title{
         font-family: $titlefont;
         font-size: 18px;
       }
@@ -81,7 +76,7 @@ $paragraphFont:'Open Sans', sans-serif;
             }
         } 
 
-        .main-article{
+        .movie-item{
             width:65%;
           }
 
