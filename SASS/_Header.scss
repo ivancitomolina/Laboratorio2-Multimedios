@@ -2,17 +2,17 @@ $logobackground: white;
 $subnavBackgorund: black;
 $titlefont: 'Lobster', cursive;
 $paragraphFont:'Open Sans', sans-serif;
-.nav {
+.menu {
   
-	 & .nav__list{
+	 & .menu__list{
         list-style:none;
       display:flex;
         align-items:center;
     
-        & .nav__items{
+        & .menu__items{
             display:flex;
           
-            & .nav__link {
+            & .menu_item_link {
               font-family: $titlefont;
                 color:black;
                 margin:20px;
@@ -24,7 +24,7 @@ $paragraphFont:'Open Sans', sans-serif;
             }
         }
     }
-    & #nav__logo {
+    & #menu__logo {
         display:flex;
         background:$logobackground;
      
@@ -39,15 +39,15 @@ $paragraphFont:'Open Sans', sans-serif;
 }
 
 
-.sub__nav {
+.submenu {
   margin-top:-17px;
   background:$subnavBackgorund;
 
-  .nav__list {
+  .submenu__list {
     display: flex;
     list-style: none;
 
-    .nav__link {
+    .submenu_item__link {
 
         display: flex;
         font-family: $titlefont;

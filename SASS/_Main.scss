@@ -1,90 +1,99 @@
 $navlinkbackground: #F29F05;
-$titlefont: 'Lobster', cursive;
-$paragraphFont:'Open Sans', sans-serif;
-#movie__list{ 
- 
-    display:flex;
-    flex-wrap:wrap;
-    margin:10px;
-    
-  }
-  .movie__item{
-    width:300px;
-    margin:auto;
-    padding:10px;
+$titlefont: 'Lobster',
+cursive;
+$paragraphFont:'Open Sans',
+sans-serif;
+
+#movie__list {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+}
+
+.movie__item {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
   border: black 1px solid;
-    margin-top:10px;
-    p{
-        width:140px;
-    }
-    b{
-        text-decoration:underline;
-      }  
+  margin-top: 10px;
 
-    .movie__banner{
-        display:flex;
-        background:#EDF6FC;
-       /* width:auto;
+  p {
+    width: 140px;
+  }
+
+  b {
+    text-decoration: underline;
+  }
+
+  .movie__banner {
+    display: flex;
+    background: #EDF6FC;
+    /* width:auto;
        height:150px;*/
-       margin: auto;
-      text-align:center;
-        align-items:center;
-        font-family: $paragraphFont;
-       
-      }
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    font-family: $paragraphFont;
 
-    .movie__description{
-      font-family: $paragraphFont;
-      font-size: 14px;
-      .movie__title{
-        font-family: $titlefont;
-        font-size: 18px;
-      }
-        p:last-child{
-         
-            color:green;
-        }
-
-      }
-       
   }
-  
-  
-  
-  
-  @media only screen and (max-width:700px) {
-   
-    body{
-      margin-top:70px;
 
-      #nav__logo {
-        position:absolute;
-        top:7px;
-        left:45%;
-         }
+  .movie__description {
+    font-family: $paragraphFont;
+    font-size: 14px;
 
-         .nav {
-            background:$navlinkbackground;
-            & .nav__list{
-                & .nav__items{
-                    & .nav__link{
-                        color:black;
-                        margin-left:-3%;
-
-                    }
-                }
-            }
-        } 
-
-        .movie__item{
-            width:65%;
-          }
-
-
+    .movie__title {
+      font-family: $titlefont;
+      font-size: 18px;
     }
-    
-    
-    
-      
-    
+
+    p:last-child {
+
+      color: green;
+    }
+
   }
+
+}
+
+
+
+
+@media only screen and (max-width:700px) {
+
+  body {
+    margin-top: 70px;
+
+    #menu__logo {
+      position: absolute;
+      top: 7px;
+      left: 45%;
+    }
+
+    .menu {
+      background: $navlinkbackground;
+
+      & .menu__list {
+        & .menu__items {
+          & .menu_item_link {
+            color: black;
+            margin-left: -3%;
+
+          }
+        }
+      }
+    }
+
+    .movie__item {
+      width: 65%;
+    }
+
+
+  }
+
+
+
+
+
+}

@@ -1,19 +1,23 @@
-$titlefont: 'Lobster', cursive;
-$paragraphFont:'Open Sans', sans-serif;
-.main__header{
+$titlefont: 'Lobster',
+cursive;
+$paragraphFont:'Open Sans',
+sans-serif;
+
+.main__title {
   font-family: $titlefont;
 }
-.paragraph{
+
+.main_title_paragraph {
   font-family: $paragraphFont;
-    display: flex;
-  width:500px;
+  display: flex;
+  width: 500px;
 }
 
 
 
 @media only screen and (max-width:530px) {
 
-.paragraph{
-    width:auto;
-}
+  .paragraph {
+    width: auto;
+  }
 }
